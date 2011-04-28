@@ -1,11 +1,11 @@
 %define upstream_name    Convert-Color
-%define upstream_version 0.07
+%define upstream_version 0.08
 
 %define _requires_exceptions perl(Convert::Color::HueBased)
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    A color value represented as red/green/blue in
 License:    GPL+ or Artistic
