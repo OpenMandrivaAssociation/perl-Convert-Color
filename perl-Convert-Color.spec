@@ -1,21 +1,21 @@
 %define upstream_name    Convert-Color
-%define upstream_version 0.08
+%define upstream_version 0.09
 
 %if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Convert::Color::HueBased\\)'
+%define __noautoreq 'perl\\(Convert::Color::HueChromaBased\\)'
 %else
-%define %define _requires_exceptions perl(Convert::Color::HueBased)
+%define %define _requires_exceptions perl(Convert::Color::HueChromaBased)
 %endif
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	A color value represented as red/green/blue in
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Convert/Convert-Color-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Pluggable)
@@ -78,3 +78,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Aug 23 2009 cpan2dist 0.05-1mdv
 - initial mdv release, generated with cpan2dist
+
