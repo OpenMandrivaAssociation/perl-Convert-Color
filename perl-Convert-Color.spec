@@ -1,5 +1,5 @@
 %define upstream_name    Convert-Color
-%define upstream_version 0.09
+%define upstream_version 0.10
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Convert::Color::HueChromaBased\\)'
@@ -78,4 +78,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Sun Aug 23 2009 cpan2dist 0.05-1mdv
 - initial mdv release, generated with cpan2dist
+
 
