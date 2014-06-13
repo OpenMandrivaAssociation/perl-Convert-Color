@@ -1,10 +1,11 @@
 %define upstream_name    Convert-Color
-%define upstream_version 0.10
+%define upstream_version 0.11
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Convert::Color::HueChromaBased\\)'
 %else
-%define %define _requires_exceptions perl(Convert::Color::HueChromaBased)
+%define 
+%define _requires_exceptions perl(Convert::Color::HueChromaBased)
 %endif
 
 Name:		perl-%{upstream_name}
@@ -12,10 +13,11 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	A color value represented as red/green/blue in
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Convert/Convert-Color-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Module::Pluggable)
@@ -53,30 +55,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc Changes LICENSE README
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Thu Apr 28 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.80.0-1mdv2011.0
-+ Revision: 659890
-- update to new version 0.08
-
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.70.0-2
-+ Revision: 656894
-- rebuild for updated spec-helper
-
-* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 0.70.0-1mdv2011.0
-+ Revision: 602097
-- new version
-
-* Sun Aug 23 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-2mdv2011.0
-+ Revision: 419898
-- adding requires exception
-
-* Sun Aug 23 2009 Jérôme Quelin <jquelin@mandriva.org> 0.50.0-1mdv2010.0
-+ Revision: 419897
-- import perl-Convert-Color
-
-
-* Sun Aug 23 2009 cpan2dist 0.05-1mdv
-- initial mdv release, generated with cpan2dist
 
 

@@ -1,5 +1,6 @@
 removed_sources:
   Convert-Color-0.08.tar.gz: bc0fdd8c538977837701a5784592fdb9bbd93abd
   Convert-Color-0.09.tar.gz: e63589ca5b90399f630edcfbb593647dc1ddb2f5
-sources:
   Convert-Color-0.10.tar.gz: cc4bd82dbb849c5f102dfdf3c03e63dea0b78d7f
+sources:
+  Convert-Color-0.11.tar.gz: c555c9e708587022cb2d5cfd12ebc094cee6e708
