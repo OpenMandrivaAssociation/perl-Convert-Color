@@ -20,6 +20,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Convert/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Test::Number::Delta)
 BuildRequires:	perl(Module::Pluggable)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Module::Build::Compat)
